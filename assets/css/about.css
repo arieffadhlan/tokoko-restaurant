@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+     animation: transitionIn 1s;
+     /* background-color: #151320; */
+}
+
+@keyframes transitionIn {
+     from {
+          opacity: 0;
+          transform: translateY(-10px);
+     }
+
+     to {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+/* Navbar */
+.navbar {
+     position: fixed !important;
+     z-index: 99;
+     width: 100%;
+     margin-top: -100px !important;
+     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3)
+}
+
+.navbar-brand {
+     font-family: 'Viga', sans-serif;
+     font-size: 28px !important;
+     color: lightgrey !important;
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.nav-link {
+     font-family: 'Viga', sans-serif;
+     font-size: 16px;
+     color: lightgrey !important;
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+     text-transform: uppercase;
+     margin-right: 30px;
+}
+
+.nav-link:hover::after {
+     content: '';
+     display: block;
+     border-bottom: 3px solid #f4b538;
+     width: 60%;
+     margin: auto;
+     padding-bottom: 4px;
+     margin-bottom: -7px;
+}
+
+.active {
+     font-weight: bold !important;
+     color: white !important;
+}
+
+.navbar-nav .btn {
+     font-family: 'Viga', sans-serif;
+     font-size: 16px;
+}
+
+.fa {
+     padding-right: 5px;
+}
+
+/*  Logout-button */
+.button1 {
+     border-radius: 10px !important;
+     background-color: #f4b538 !important;
+     opacity: 0.6;
+}
+
+.button1:hover {
+	background-color: #f4b538;
+     opacity: 1;
+}
+
+.regis:hover {
+     text-decoration: none !important;
+}
+
+/* content */
+.about {
+     margin-top: 100px !important;
+}
+
+/* go to top */
+#myBtn {
+     display: none; 
+     position: fixed; 
+     bottom: 9px; 
+     right: 5px; 
+     z-index: 100; 
+     border: none; 
+     outline: none; 
+     background-color: #f4b538; 
+     color: black;
+     cursor: pointer; 
+     padding: 10px; 
+     border-radius: 10px;
+     font-size: 18px;
+}
+
+/* Footer */
+.footer {
+     width : 100%;
+     background-color: #263238;
+     color: lightgrey;
+     margin-top: 30px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+     /* Navbar */
+     .navbar {
+          background: none;
+     }
+
+     .navbar-brand, .nav-link {
+          color: white !important;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+     }
+
+     .nav-link {
+          text-transform: uppercase;
+          margin-right: 30px;
+     }
+
+     .utama {
+          font-weight: bold;
+     }
+
+     .nav {
+          text-align: center;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+     .navbar-brand, .nav-link {
+          color: white !important;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+     }
+
+     .nav-link {
+          text-transform: uppercase;
+          margin-right: 30px;
+     }
+
+     .nav-link:hover::after {
+          content: '';
+          display: block;
+          border-bottom: 3px solid #f4b538;
+          width: 60%;
+          margin: auto;
+          padding-bottom: 4px;
+          margin-bottom: -7px;
+     }
+
+     .utama {
+          font-weight: bold;
+     }
+
+     .nav {
+          text-align: center;
+     }
+
+     .navbar-nav {
+          padding-right: 20px;
+	}
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+     .nav-link:hover::after {
+          border-bottom: none;
+     }
+}
+
+/* Smartphone */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+     .nav-link:hover::after {
+          border-bottom: none;
+     }
+}
+
+@media screen and (min-width: 561px) and (max-width: 576.98px) {
+     .nav-link:hover::after {
+          border-bottom: none;
+     }
+}
+
+@media screen and (min-width: 481px) and (max-width: 560.98px) {
+     .nav-link:hover::after {
+          border-bottom: none;
+     }
+     
+     #myBtn {
+          bottom: 70px;
+     }
+}
+
+@media screen and (min-width: 421px) and (max-width: 480.98px) {
+     .nav-link:hover::after {
+          border-bottom: none;
+     }
+
+     #myBtn {
+          bottom: 70px;
+     }
+}
+
+@media screen and (min-width: 365px) and (max-width: 420.98px) {
+     .nav-link:hover::after {
+          border-bottom: none;
+     }
+
+     #myBtn {
+          bottom: 70px;
+     }
+}
+
+@media screen and (max-width: 364.98px) {
+     .nav-link:hover::after {
+          border-bottom: none;
+     }
+
+     #myBtn {
+          bottom: 70px;
+     }
+}
