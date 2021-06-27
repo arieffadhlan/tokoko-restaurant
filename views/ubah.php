@@ -112,7 +112,7 @@
                         <div class="col-md-11 mb-3">
                             <button type="submit" name="submit" class="btn btn-success">Submit</button>
                             <button type="reset" name="reset" class="btn btn-danger">Reset</button>
-                            <button type="submit" name="kembali" class="btn btn-primary"><a href="admin.php">Kembali.</a></button>
+                            <button type="submit" name="kembali" class="btn btn-primary"><a href="admin.php">Kembali</a></button>
                         </div>
                     </div>
             </form>
